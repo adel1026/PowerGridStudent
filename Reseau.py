@@ -38,7 +38,7 @@ class Reseau:
         print("Erreur : Aucun nœud d'entrée défini.")
         return False
 
-    # Utilisation d'un algorithme de parcours pour vérifier la connectivité (parcours en largeur ici)
+   
     visites = set()
     a_visiter = [self.noeud_entree]
 
@@ -69,7 +69,7 @@ class Reseau:
         return False
 
     # Récupérer les coordonnées des clients sur le terrain
-    clients = terrain.get_clients()  # Une liste de coordonnées des clients, ex : [(1, 2), (3, 4), ...]
+    clients = terrain.get_clients() 
 
     # Vérifier que chaque client est connecté au réseau
     for client in clients:
